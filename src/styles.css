@@ -80,3 +80,8 @@ body {
 .tree.autumn {
     background-image: url("tree-autumn.png");
 }
+
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; 
+    content:url("tree-winter.png") url("tree-spring.png") url("tree-summer.png") url("tree-autumn.png");
+ }
