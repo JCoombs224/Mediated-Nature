@@ -1,0 +1,96 @@
+body {
+    height: 100%;
+}
+
+.tree-bg {
+    /* left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute; */
+    width: 600px;
+    height: 600px;
+    background-color: rgb(154, 218, 243);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(45deg)
+    }
+    to {
+        transform: rotate(404deg);
+    }
+  }
+
+.season-container {
+    width: 300px;
+    height: 300px;
+    /*top: 0;
+    bottom: 0;
+    left: 150px;
+    margin: auto;
+    position: absolute;*/
+    background-image: url("seasons.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-duration: 8s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.arrow-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.season-arrow {
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid rgb(0, 0, 0);
+}
+
+.season-container.winter {
+    transform: rotate(225deg);
+}
+.season-container.spring {
+    transform: rotate(315deg);
+}
+.season-container.summer {
+    transform: rotate(45deg);
+}
+.season-container.autumn {
+    transform: rotate(135deg);
+}
+
+
+.tree {
+    width: 600px;
+    height: 600px;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    position: relative;
+    transition: 2s linear;
+}
+
+.tree.winter {
+    background-image: url("tree-winter.png");
+}
+.tree.spring {
+    background-image: url("tree-spring.png");
+}
+.tree.summer {
+    background-image: url("tree-summer.png");
+}
+.tree.autumn {
+    background-image: url("tree-autumn.png");
+}

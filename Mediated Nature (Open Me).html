@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Mediated Nature</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
+
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-3 d-flex flex-column justify-content-center">
+          <div class="arrow-container">
+            <div class="season-arrow"></div>
+          </div>
+          <div id="season" class="season-container"></div>
+          <button id="seasonBtn" onclick="nextSeason()" class="btn btn-primary mt-5">Next Season</button>
+        </div>
+        <div class="col-lg-6">
+          <div class="tree-bg">
+            <div id="tree" class="tree summer"></div>
+          </div>
+        </div>
+        <div class="offset-4 col-6 col-xxl-3 offset-xxl-0 text-center">
+          <h2>Mediated Nature</h2>
+          <h5>Jamison Coombs</h5>
+          <p>
+            My intent for this assignment was to represent the natural phenomenon of seasons in nature as an
+             interactive website that would allow you to cycle through it. I started off by producing the image
+              of the tree trunk and branches in Adobe Illustrator. This would be the base that would represent
+               wintertime when the trees have no leaves. I then created separate drawings of leaves with
+                different colors for each season that I could layer on top of the base trunk image. 
+          </p>
+          <p>
+            After I had the images I would need, I coded up a webpage to be the base for this assignment. I then
+             programmed the animation that would fade between the different images based on the current season and
+              a button to trigger the animations. Once I had that down, I added the spinner with an arrow to show the
+               current season.
+          </p>
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+  </main>
+  <script src="src/script.js"></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
