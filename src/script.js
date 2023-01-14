@@ -1,7 +1,15 @@
 var tree = document.getElementById("tree");
 var seasonSpinner = document.getElementById("season");
 var seasonBtn = document.getElementById("seasonBtn");
+
 var season = "summer";
+
+document.addEventListener("load", function(){
+    new Image('tree-winter.png');
+    new Image('tree-spring.png');
+    new Image('tree-summer.png');
+    new Image('tree-autumn.png');
+});
 
 const spinAnim = [
     {transform: 'rotate(0deg)'},

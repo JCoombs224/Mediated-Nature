@@ -58,20 +58,6 @@ body {
     border-top: 50px solid rgb(0, 0, 0);
 }
 
-.season-container.winter {
-    transform: rotate(225deg);
-}
-.season-container.spring {
-    transform: rotate(315deg);
-}
-.season-container.summer {
-    transform: rotate(45deg);
-}
-.season-container.autumn {
-    transform: rotate(135deg);
-}
-
-
 .tree {
     width: 600px;
     height: 600px;
