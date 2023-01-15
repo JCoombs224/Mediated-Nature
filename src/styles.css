@@ -65,7 +65,7 @@ body {
     background-repeat:no-repeat;
     background-position: center;
     position: relative;
-    transition: 2s linear;
+    transition: 2s ease-in;
 }
 
 .tree.winter {

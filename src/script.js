@@ -1,6 +1,7 @@
 var tree = document.getElementById("tree");
 var seasonSpinner = document.getElementById("season");
 var seasonBtn = document.getElementById("seasonBtn");
+var playing = false;
 
 var season = "summer";
 
@@ -27,6 +28,52 @@ function removeClass() {
     tree.classList.remove("spring");
     tree.classList.remove("summer");
     tree.classList.remove("autumn");
+}
+
+async function toggleAnim() {
+    if(playing) {
+        location.reload();
+    }
+    playing = true;
+    seasonBtn.disabled = true;
+    //tree.style.transitionTimingFunction = 'ease-in';
+    seasonSpinner.style.animationPlayState = "running";
+    if(season == "winter") {
+        spring();
+    }
+    else if(season == "spring") {
+        summer();
+    }
+    else if(season == "summer") {
+        autumn();
+    }
+    else if(season == "autumn") {
+        winter();
+    }
+    
+    while(playing) {  
+        await play();
+    }
+}
+
+function play() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            if(season == "winter") {
+                spring();
+            }
+            else if(season == "spring") {
+                summer();
+            }
+            else if(season == "summer") {
+                autumn();
+            }
+            else if(season == "autumn") {
+                winter();
+            }
+            resolve();
+        }, 2000);
+    })
 }
 
 function nextSeason() {
